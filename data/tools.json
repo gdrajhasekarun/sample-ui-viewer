@@ -1,0 +1,78 @@
+{
+  "testcases": [
+    {
+      "name": "Sample Test case to validate a functionality",
+      "steps": [
+        {
+          "id": 1,
+          "step": "Launch Application url",
+          "expRes": "Validate Login page is displayed with username text box"
+        },
+        {
+          "id": 2,
+          "step": "Enter Username in the username Textbox",
+          "expRes": "Username should be entered in the username field"
+        },
+        {
+          "id": 3,
+          "step": "Enter Password in the password field",
+          "expRes": "Password should be displayed"
+        },
+        {
+          "id": 4,
+          "step": "Click Sign in button",
+          "expRes": "Validate home page should be displayed"
+        }
+      ]
+    }
+  ],
+  "libraryMethods": [
+    {
+      "method": "enterText",
+      "params": [
+        "target",
+        "value"
+      ],
+      "desc": "Enter the Text in the target field"
+    },
+    {
+      "method": "selectText",
+      "params": [
+        "target",
+        "value"
+      ],
+      "desc": "Select the Text in the target dropdown field"
+    },
+    {
+      "method": "launchUrl",
+      "params": [
+        "value"
+      ],
+      "desc": "launch the application url"
+    },
+    {
+      "method": "click",
+      "params": [
+        "target"
+      ],
+      "desc": "click on a button or link"
+    }
+  ],
+  "locators": [
+    {
+      "name": "txt_username",
+      "type": "xpath",
+      "locator": ".//input[@id='username']"
+    },
+    {
+      "name": "txt_password",
+      "type": "xpath",
+      "locator": ".//input[@id='password']"
+    },
+    {
+      "name": "btn_sign_in",
+      "type": "xpath",
+      "locator": ".//input[@id='Login']"
+    }
+  ]
+}
