@@ -74,8 +74,6 @@ metadata:
   namespace: apps
   labels:
     app: APP_NAME_PLACEHOLDER
-  annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: websecure
 spec:
   ingressClassName: traefik
   rules:
