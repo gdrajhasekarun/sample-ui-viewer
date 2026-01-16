@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import CustomRoutes from "./routes/Routes";
 import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 function App() {
   return (
